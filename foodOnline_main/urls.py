@@ -25,7 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home,name='home'),
     # http://127.0.0.1:8000/accounts/registerUser
-    path('accounts/', include('accounts.urls'))
+    path('accounts/', include('accounts.urls')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
     # this is the configurations for the Django media files

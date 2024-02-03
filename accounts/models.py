@@ -52,11 +52,11 @@ class UserManager(BaseUserManager):
 #..including the Authontication functinallity of django
 #"AbstractUser": we can also use this , but django will only allow us to use extra fields to our model not more than that
 class User(AbstractBaseUser):
-    RESTAURANT = 1
+    VENDOR = 1
     CUSTOMER = 2
 
     ROLE_CHOICE = (
-        (RESTAURANT, 'Restaurant'),
+        (VENDOR, 'vendor'),
         (CUSTOMER, 'Customer'),
     )
     first_name = models.CharField(max_length=50)
